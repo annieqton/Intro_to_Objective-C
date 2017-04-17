@@ -15,6 +15,7 @@
 		F2323E611EA524FC003AE60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2323E5F1EA524FC003AE60D /* LaunchScreen.storyboard */; };
 		F2323E6A1EA52F0F003AE60D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E691EA52F0F003AE60D /* Person.m */; };
 		F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */; };
+		F2323E711EA56994003AE60D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E701EA56994003AE60D /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		F2323E6B1EA54555003AE60D /* ViewController+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Identifier.h"; sourceTree = "<group>"; };
 		F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Identifier.m"; sourceTree = "<group>"; };
 		F2323E6E1EA5483D003AE60D /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
+		F2323E6F1EA56994003AE60D /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		F2323E701EA56994003AE60D /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		F2323E721EA56DE2003AE60D /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,9 @@
 				F2323E6B1EA54555003AE60D /* ViewController+Identifier.h */,
 				F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */,
 				F2323E581EA524FC003AE60D /* ViewController.m */,
+				F2323E6F1EA56994003AE60D /* Employee.h */,
+				F2323E701EA56994003AE60D /* Employee.m */,
+				F2323E721EA56DE2003AE60D /* PersonQueue.h */,
 				F2323E5A1EA524FC003AE60D /* Main.storyboard */,
 				F2323E5D1EA524FC003AE60D /* Assets.xcassets */,
 				F2323E5F1EA524FC003AE60D /* LaunchScreen.storyboard */,
@@ -166,6 +173,7 @@
 				F2323E591EA524FC003AE60D /* ViewController.m in Sources */,
 				F2323E561EA524FC003AE60D /* AppDelegate.m in Sources */,
 				F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */,
+				F2323E711EA56994003AE60D /* Employee.m in Sources */,
 				F2323E6A1EA52F0F003AE60D /* Person.m in Sources */,
 				F2323E531EA524FC003AE60D /* main.m in Sources */,
 			);
@@ -328,6 +336,7 @@
 				F2323E671EA524FC003AE60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "Person.h"
 
+
 @implementation Person
 
 NSString *_name;  //underlying instance variable
@@ -38,30 +39,6 @@ NSString *_age;
 
 +(void)sayHello {
     NSLog(@"Hello!");
-}
-
-
-+(void)Employee{
-    NSString *_employeeNumber;
-    NSString *_yearsEmployed;
-    NSString *_managerName;
-    
-    -(NSString*)employeeNumber{
-        return _employeeNumber;
-    }
-    
-    -(NSString*)yearsEmployed{
-        return _yearsEmployed;
-    }
-    
-    -(NSString*)managerName{
-        return _managerName;
-    }
-    
-    
-    
-    
-    
 }
 
 
