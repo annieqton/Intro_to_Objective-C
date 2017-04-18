@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "ViewControllerDataSource.h"
+#import "NSString+String.h"
 
 static int gMoveNumber = 10;
 
@@ -34,6 +35,10 @@ static int gMoveNumber = 10;
     [Person sayHello];  //using Person here instead of adam because it's a class method so it's called on a type, not an instance
     
     NSLog(@"%i", gMoveNumber);
+    
+    [NSArray returnArrayOfWords];
+    
+    [NSString reversedString];
 
 }
 

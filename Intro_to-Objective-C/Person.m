@@ -8,15 +8,21 @@
 
 #import "Person.h"
 
+
 @implementation Person
 
 NSString *_name;  //underlying instance variable
+
+NSString *_firstName;
+NSString *_lastName;
+NSString *_age;
 
 // these below are replaced by @property(strong, nonatomic) NSString *name; in Person.h
 //-(NSString *)name{  //getters
 //    return _name;
 //}
 //
+
 //-(void)setName:(NSString*)name{  //setters
 //    _name = name;
 //}
@@ -34,5 +40,6 @@ NSString *_name;  //underlying instance variable
 +(void)sayHello {
     NSLog(@"Hello!");
 }
+
 
 @end
