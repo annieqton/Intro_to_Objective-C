@@ -46,7 +46,7 @@ static int gMoveNumber = 10;
     
     NSLog(@"%@", sampleArray);
     
-    [myString reversedString]; 
+    [myString reversedString];  //change myString to NSString
 }
 
                              
