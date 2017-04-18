@@ -18,6 +18,7 @@
 		F2323E711EA56994003AE60D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E701EA56994003AE60D /* Employee.m */; };
 		F2323E781EA58490003AE60D /* NSString+String.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E771EA58490003AE60D /* NSString+String.m */; };
 		F2B14B6A1EA6876400833681 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B14B691EA6876400833681 /* EmployeeDatabase.m */; };
+		F2C9A60A1EA6C97E0012B7B4 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9A6091EA6C97E0012B7B4 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		F2323E771EA58490003AE60D /* NSString+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+String.m"; sourceTree = "<group>"; };
 		F2B14B681EA6876400833681 /* EmployeeDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeDatabase.h; sourceTree = "<group>"; };
 		F2B14B691EA6876400833681 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
+		F2C9A6081EA6C97E0012B7B4 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		F2C9A6091EA6C97E0012B7B4 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		F2B14B6C1EA699C000833681 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F2C9A6081EA6C97E0012B7B4 /* ViewController2.h */,
+				F2C9A6091EA6C97E0012B7B4 /* ViewController2.m */,
 				F2323E6B1EA54555003AE60D /* ViewController+Identifier.h */,
 				F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */,
 				F2323E571EA524FC003AE60D /* ViewController.h */,
@@ -209,6 +214,7 @@
 				F2B14B6A1EA6876400833681 /* EmployeeDatabase.m in Sources */,
 				F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */,
 				F2323E711EA56994003AE60D /* Employee.m in Sources */,
+				F2C9A60A1EA6C97E0012B7B4 /* ViewController2.m in Sources */,
 				F2323E6A1EA52F0F003AE60D /* Person.m in Sources */,
 				F2323E781EA58490003AE60D /* NSString+String.m in Sources */,
 				F2323E531EA524FC003AE60D /* main.m in Sources */,

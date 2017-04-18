@@ -20,7 +20,7 @@
 -(instancetype)initWithFirstName:(NSString *)firstName
                         lastName:(NSString *)lastName
                           andAge:(NSNumber *)age
-                    emailAddress: (NSString *)email
+                    emailAddress: (NSString *)emailAddress
                    yearsEmployed:(NSNumber *)yearsEmployed
                       andManager:(NSString *)managerName;
 
