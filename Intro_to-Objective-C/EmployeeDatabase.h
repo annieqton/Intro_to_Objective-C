@@ -11,7 +11,7 @@
 
 @interface EmployeeDatabase : NSObject
 
-+(instancetype)shared;
++(instancetype)shared;  //making it public, however you need to use the [[Employee shared] method]; in order to access it.  See ViewController.m
 
 -(NSInteger)count;
 
@@ -23,6 +23,8 @@
 
 -(void)remove:(Employee *)employee;
 
--(void)remove:(Employee *)employee atIndex:(int)index;
+-(void)removeEmployeeAtIndex:(int)index;
+
+-(void)removeAllEmployees;
 
 @end

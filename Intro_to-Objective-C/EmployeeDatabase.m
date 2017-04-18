@@ -8,7 +8,27 @@
 
 #import "EmployeeDatabase.h"
 
+@interface EmployeeDatabase ()  //use interface with class extension to access a private method
+
+@property(strong, nonatomic) NSArray *employees;
+
+@end
+
+
+
+
 @implementation EmployeeDatabase
+
++(instancetype)shared{
+    
+    static EmployeeDatabase *shared = nil;  //nil out a previous shared because we had one that was created globally.
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{  //^{} is block syntax
+        shared = [[[self class] alloc]init];  //self here is EmployeeDatabase.   we use self here in order to subclass
+    });
+    return shared;
+}
 
 
 //MARK: Helper methods

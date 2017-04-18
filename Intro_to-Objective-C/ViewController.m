@@ -22,6 +22,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    //this is how you access your singleton by doing EmployeeDatabase share
+    [[EmployeeDatabase shared] count];
+    
+    
+    
 
     Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30 yearsEmployed:@2 andManager:@"Brook"];
     
