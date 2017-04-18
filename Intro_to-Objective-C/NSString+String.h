@@ -11,12 +11,10 @@
 @interface NSString (String)
 
 
-@property(strong, nonatomic) NSMutableString *str;
-
 //Instance Method
--(NSArray *)returnArrayOfWords;
++(NSArray *)returnArrayOfWords;
 
--(NSMutableString *)reversedString;
++(NSString *)reversedString;
 
 
 @end

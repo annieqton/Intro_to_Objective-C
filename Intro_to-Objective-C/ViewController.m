@@ -36,19 +36,21 @@ static int gMoveNumber = 10;
     
     NSLog(@"%i", gMoveNumber);
     
-    [NSArray returnArrayOfWords];
     
-    [NSString reversedString];
-
+    
+    NSString *sampleString = @"abcdefgh12345678";
+    NSArray *sampleArray = [sampleString returnArrayOfWords];
+    
+    NSLog(@"%@", sampleArray);
+    
+    [sampleString reversedString];
 }
 
+                             
+                             
+                             
 -(void)requiredNumberForEachItem:(int)number{  //method for protocol
     
 }
-
-
-
-
-
 
 @end

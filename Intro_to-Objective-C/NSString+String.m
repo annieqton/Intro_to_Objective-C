@@ -11,22 +11,10 @@
 @implementation NSMutableString (String)
 //Create a cateory of NSString. Extend NSString's functionality to have a instance method that returns an array of the words contained in self.
 
-NSString *str = @"abcdefghij12345678910";
-NSArray *arr = nil;
-
-
 
 -(NSArray *)returnArrayOfWords{
     
-    NSMutableString *str = [self str];
-    
-    NSArray *arr = [str componentsSeparatedByString:@" "];
-    
-    for (int i = 0; i<[arr count]; i++) {
-        NSLog(@"%@", arr);
-    }
-    
-    return 0;
+    return [self componentsSeparatedByString:@" "];
 }
 
 
@@ -36,16 +24,15 @@ NSArray *arr = nil;
 
 
 -(NSString *)reversedString{
+
+     NSMutableString *reversedString = [NSMutableString stringWithCapacity: [self length]];
     
-    NSMutableString *str = [NSMutableString stringWithCapacity: [str length]];
-    
-    
-    [str enumerateSubstringsInRange:NSMakeRange(0, [str length]) options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences) usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) { [str appendString:substring];
+    [reversedString enumerateSubstringsInRange:NSMakeRange(0, [reversedString length]) options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences) usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) { [reversedString appendString:substring];
     }];
     
-    NSLog(@"%@", str);
-    
-    return 0;
+    NSLog(@"%@", reversedString);
+
+    return reversedString;
 }
 
 
