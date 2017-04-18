@@ -38,12 +38,12 @@ static int gMoveNumber = 10;
     
     
     
-    NSString *sampleString = @"abcdefgh12345678";
-    NSArray *sampleArray = [sampleString returnArrayOfWords];
+    NSString *myString = @"I miss Swift";
+    NSArray *sampleArray = [myString returnArrayOfWords];
     
     NSLog(@"%@", sampleArray);
     
-    [sampleString reversedString];
+    [myString reversedString];
 }
 
                              
