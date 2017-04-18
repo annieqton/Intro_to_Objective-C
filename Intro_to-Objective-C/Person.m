@@ -11,29 +11,28 @@
 
 @implementation Person
 
-NSString *_name;  //underlying instance variable
+-(instancetype)initWithFirstName:(NSString *)firstName
+                        lastName:(NSString *)lastName
+                          andAge:(NSNumber *)age{
+    self = [super init];
+    if (self) {
+        _firstName = firstName;
+        _lastName = lastName;
+        _age = age;
+    }
+    return self;
+}
+
+
 
 NSString *_firstName;
 NSString *_lastName;
-NSString *_age;
+NSNumber *_age;
 
-// these below are replaced by @property(strong, nonatomic) NSString *name; in Person.h
-//-(NSString *)name{  //getters
-//    return _name;
-//}
-//
-
-//-(void)setName:(NSString*)name{  //setters
-//    _name = name;
-//}
 
 -(void)walk{
-    
-    NSString *name = [self name];  //self is an instance of the method Person
-    
-//    NSString * adam = @"Adam";  //and @ sign in front means string literal
-    
-    NSLog(@"%@ is walking...", name);  //%@ is a placeholder for name
+    NSString *firstName = [self firstName];
+    NSLog(@"%@ is walking...", firstName);
 }
 
 
@@ -41,5 +40,19 @@ NSString *_age;
     NSLog(@"Hello!");
 }
 
+
+
+//in order to copy, must confirm to NSCopying (see Person.h, @interface Person : NSObject <NSCopying>) and implement copyWithZone method
+
+-(id)copyWithZone:(NSZone *)zone{
+    Person *person = [[[self class] alloc]init];  //whatever class I am, inititate that class instead of Person
+    
+    person.firstName = self.firstName;
+    person.lastName = self.lastName;
+    person.age = self.age;
+    
+    return person;
+    
+}
 
 @end
