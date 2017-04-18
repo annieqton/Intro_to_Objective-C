@@ -15,9 +15,8 @@ static int gMoveNumber = 10;
 
 @interface ViewController () <ViewControllerDataSource>
 
-
-
 @end
+
 
 @implementation ViewController
 
@@ -38,8 +37,8 @@ static int gMoveNumber = 10;
     
     
     
-    NSString *sampleString = @"abcdefgh12345678";
-    NSArray *sampleArray = [sampleString returnArrayOfWords];
+    NSString *myString = @"I miss Swift";
+    NSArray *sampleArray = [myString returnArrayOfWords];
     
     NSLog(@"%@", sampleArray);
     
