@@ -10,25 +10,6 @@
 
 @implementation NSString (String)
 
-//NSString *string1 = @"One";
-//NSString *string2 = @"Two";
-//NSString *string3 = @"Three";
-//
-//NSNumber *number = @100;
-//
-//NSMutableArray *arry = [[NSMutableArray alloc] initWithObjects:string1, string2, string3, nil];
-//
-//[array addObject:number];
-
-
-
-//NSDictionary *dictionary = [[NSMutableDictionary alloc]initWithDictionary:@{@"firstName": @"Adam", @"lastName": @"Wallraff", @"age": $30}];
-//
-//[dictionary setObject:@"dog" forKey:@"pet"];
-//
-//NSString *firstName = dictionary[@"firstName"];
-//
-//dictionary[@"car"] = @"Subaru";
 
 
 

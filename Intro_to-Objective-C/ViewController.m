@@ -8,12 +8,12 @@
 
 #import "ViewController.h"
 #import "Person.h"
-#import "ViewControllerDataSource.h"
 #import "NSString+String.h"
+#import "EmployeeDatabase.h"
+#import "Employee.h"
 
-static int gMoveNumber = 10;
 
-@interface ViewController () <ViewControllerDataSource>
+@interface ViewController ()
 
 @end
 
@@ -23,21 +23,13 @@ static int gMoveNumber = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30 yearsEmployed:@2 andManager:@"Brook"];
     
-
-    Person *adam = [[Person alloc] init];   //init inherits from NSObject
+    Employee *newInstructor = [original copy]; //preserve original and create a deep copy
     
-    [adam setName:@"Adam"];
+    newInstructor.firstName = @"Mike";
     
-//    NSString *personName = [adam name];  //adam is an instance of Person Method. name is an instance of adam.  name is a message, and adam is a receiver
-    
-    [adam walk];
-    
-    [Person sayHello];  //using Person here instead of adam because it's a class method so it's called on a type, not an instance
-    
-    NSLog(@"%i", gMoveNumber);
-    
-    
+    NSLog(original.firstName);
     
     
 //  LAB FROM MONDAY

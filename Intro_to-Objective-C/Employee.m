@@ -11,37 +11,30 @@
 @implementation Employee
 
 
-//Create a subclass of Person called Employee, and add the following properties to Employee:  employeeNumber, yearsEmployed, managerName.
-NSString *_employeeNumber;
-NSString *_yearsEmployed;
-NSString *_managerName;
-
-
-//Define Setter and Getter methods for the new Employee properties.
--(NSString *)employeeNumber{   //getters
-    return _employeeNumber;
+-(instancetype)initWithFirstName:(NSString *)firstName
+                        lastName:(NSString *)lastName
+                          andAge:(NSNumber *)age
+                   yearsEmployed:(NSNumber *)yearsEmployed
+                      andManager:(NSString *)managerName{  //we don't need to include employeeNumber because it is generated as the employee is created. we only include here what is needed to create employee
+    
+    self = [super initWithFirstName:firstName lastName:lastName andAge:age];
+    
+    if(self){
+        _yearsEmployed = yearsEmployed;
+        _managerName = managerName;
+        _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];  //arc4random_uniform gives int values representing between 0 up to the upper bound
+    }
+    
+    return self;
 }
 
--(void)setEmployeeNumber:(NSString *)employeeNumber{  //setters
-    _employeeNumber = employeeNumber;
-}
-
-
--(NSString *)managerName{  //getters
-    return _managerName;
-}
-
--(void)setManagerName:(NSString*)managerName{  //setters
-    _managerName = managerName;
-}
-
-
--(NSString *)yearsEmployed{  //getters
-    return _yearsEmployed;
-}
-
--(void)setYearsEmployed:(NSString *)yearsEmployed{  //setters
-    _yearsEmployed = yearsEmployed;
+-(id)copyWithZone:(NSZone *)zone{
+    Employee *employee = [super copyWithZone:zone];
+    employee.employeeNumber = self.employeeNumber;
+    employee.managerName = self.managerName;
+    employee.yearsEmployed = self.yearsEmployed;
+    
+    return employee;
 }
 
 
