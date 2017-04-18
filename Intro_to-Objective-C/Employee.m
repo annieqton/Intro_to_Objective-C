@@ -18,16 +18,16 @@ NSString *_managerName;
 
 
 //Define Setter and Getter methods for the new Employee properties.
--(NSString*)employeeNumber{   //getters
+-(NSString *)employeeNumber{   //getters
     return _employeeNumber;
 }
 
--(void)setEmployeeNumber:(NSString*)employeeNumber{  //setters
+-(void)setEmployeeNumber:(NSString *)employeeNumber{  //setters
     _employeeNumber = employeeNumber;
 }
 
 
--(NSString*)managerName{  //getters
+-(NSString *)managerName{  //getters
     return _managerName;
 }
 
@@ -36,11 +36,11 @@ NSString *_managerName;
 }
 
 
--(NSString*)yearsEmployed{  //getters
+-(NSString *)yearsEmployed{  //getters
     return _yearsEmployed;
 }
 
--(void)setYearsEmployed:(NSString*)yearsEmployed{  //setters
+-(void)setYearsEmployed:(NSString *)yearsEmployed{  //setters
     _yearsEmployed = yearsEmployed;
 }
 

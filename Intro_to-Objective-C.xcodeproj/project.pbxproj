@@ -16,7 +16,7 @@
 		F2323E6A1EA52F0F003AE60D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E691EA52F0F003AE60D /* Person.m */; };
 		F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */; };
 		F2323E711EA56994003AE60D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E701EA56994003AE60D /* Employee.m */; };
-		F2323E751EA56FAD003AE60D /* NSObject+StringManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E741EA56FAD003AE60D /* NSObject+StringManipulation.m */; };
+		F2323E781EA58490003AE60D /* NSString+String.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E771EA58490003AE60D /* NSString+String.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		F2323E6F1EA56994003AE60D /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		F2323E701EA56994003AE60D /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		F2323E721EA56DE2003AE60D /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
-		F2323E731EA56FAD003AE60D /* NSObject+StringManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+StringManipulation.h"; sourceTree = "<group>"; };
-		F2323E741EA56FAD003AE60D /* NSObject+StringManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+StringManipulation.m"; sourceTree = "<group>"; };
+		F2323E761EA58490003AE60D /* NSString+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+String.h"; sourceTree = "<group>"; };
+		F2323E771EA58490003AE60D /* NSString+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+String.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 				F2323E6B1EA54555003AE60D /* ViewController+Identifier.h */,
 				F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */,
 				F2323E581EA524FC003AE60D /* ViewController.m */,
-				F2323E731EA56FAD003AE60D /* NSObject+StringManipulation.h */,
-				F2323E741EA56FAD003AE60D /* NSObject+StringManipulation.m */,
+				F2323E761EA58490003AE60D /* NSString+String.h */,
+				F2323E771EA58490003AE60D /* NSString+String.m */,
 				F2323E6F1EA56994003AE60D /* Employee.h */,
 				F2323E701EA56994003AE60D /* Employee.m */,
 				F2323E721EA56DE2003AE60D /* PersonQueue.h */,
@@ -180,7 +180,7 @@
 				F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */,
 				F2323E711EA56994003AE60D /* Employee.m in Sources */,
 				F2323E6A1EA52F0F003AE60D /* Person.m in Sources */,
-				F2323E751EA56FAD003AE60D /* NSObject+StringManipulation.m in Sources */,
+				F2323E781EA58490003AE60D /* NSString+String.m in Sources */,
 				F2323E531EA524FC003AE60D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

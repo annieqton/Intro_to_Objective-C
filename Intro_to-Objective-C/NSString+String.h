@@ -1,5 +1,5 @@
 //
-//  NSObject+StringManipulation.h
+//  NSString+String.h
 //  Intro_to-Objective-C
 //
 //  Created by Annie Ton-Nu on 4/17/17.
@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (StringManipulation)
+@interface NSString (String)
 
-@property(strong, nonatomic) NSString *arrayOfWords;
+
+@property(strong, nonatomic) NSMutableString *str;
 
 //Instance Method
 -(NSArray *)returnArrayOfWords;
+
+-(NSMutableString *)reversedString;
+
 
 @end
