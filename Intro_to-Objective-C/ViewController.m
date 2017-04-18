@@ -30,14 +30,14 @@
     
     
     
-
-    Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30 yearsEmployed:@2 andManager:@"Brook"];
+    
+    Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30 emailAddress:@"adam@codefellows.com" yearsEmployed:@2 andManager:@"Brook"];
     
     Employee *newInstructor = [original copy]; //preserve original and create a deep copy
     
     newInstructor.firstName = @"Mike";
     
-    NSLog(original.firstName);
+    NSLog(@"%@", original.firstName);
     
     
 //  LAB FROM MONDAY
