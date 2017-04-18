@@ -12,9 +12,9 @@
 
 
 //Instance Method
-+(NSArray *)returnArrayOfWords;
+-(NSArray *)returnArrayOfWords;
 
-+(NSString *)reversedString;
+-(NSString *)reversedString;
 
 
 @end

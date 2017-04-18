@@ -23,6 +23,8 @@ static int gMoveNumber = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+
     Person *adam = [[Person alloc] init];   //init inherits from NSObject
     
     [adam setName:@"Adam"];
@@ -37,12 +39,14 @@ static int gMoveNumber = 10;
     
     
     
+    
+//  LAB FROM MONDAY
     NSString *myString = @"I miss Swift";
     NSArray *sampleArray = [myString returnArrayOfWords];
     
     NSLog(@"%@", sampleArray);
     
-    [sampleString reversedString];
+    [myString reversedString]; 
 }
 
                              

@@ -8,7 +8,7 @@
 
 #import "NSString+String.h"
 
-@implementation NSMutableString (String)
+@implementation NSString (String)
 //Create a cateory of NSString. Extend NSString's functionality to have a instance method that returns an array of the words contained in self.
 
 
