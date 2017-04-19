@@ -7,6 +7,8 @@
 //
 
 #import "AddEmployeeViewController.h"
+#import "EmployeeDatabase.h"
+#import "Employee.h"
 
 @interface AddEmployeeViewController ()
 
@@ -37,11 +39,18 @@
 - (IBAction)SaveEmployeeDetails:(id)sender {
     
     
+    Employee *newEmp = [[Employee alloc] initWithFirstName:[_firstNameInput text] lastName:[_lastNameInput text] andAge:[NSNumber numberWithInt:(int)[_ageInput text]] emailAddress:[_emailInput text] yearsEmployed:[NSNumber numberWithInt:(int)[_yearsEmployedInput text]] andManager:[_managerNameInput text]];
+    
+    [[EmployeeDatabase shared] add:newEmp];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
     
 }
 
 - (IBAction)cancelEmployeeDetails:(id)sender {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

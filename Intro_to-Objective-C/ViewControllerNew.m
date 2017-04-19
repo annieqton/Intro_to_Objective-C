@@ -24,26 +24,28 @@
     
     [super viewDidLoad];
     
-
     self.employeeTable.dataSource = self;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTable) name:@"reloadData" object:nil];
     
-    if([[EmployeeDatabase shared] count] == 0) {
+//    if([[EmployeeDatabase shared] count] == 0) {
+//
+//        Employee *newEmp = [[Employee alloc] initWithFirstName:@"Annie"
+//                                                      lastName:@"Bee"
+//                                                        andAge:@10
+//                                                  emailAddress:@"annie@mail.com"
+//                                                 yearsEmployed:@25
+//                                                    andManager:@"Bella"];
+//
+//        [[EmployeeDatabase shared] add:newEmp];
+//    }
     
-        Employee *newEmp = [[Employee alloc] initWithFirstName:@"Annie"
-                                                      lastName:@"Bee"
-                                                        andAge:@10
-                                                  emailAddress:@"annie@mail.com"
-                                                 yearsEmployed:@25
-                                                    andManager:@"Bella"];
-       
-        [[EmployeeDatabase shared] add:newEmp];
-    }
-    
-    [self.employeeTable reloadData];
 }
 
-    
+
+-(void)reloadTable{
+        [self.employeeTable reloadData];
+}
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
