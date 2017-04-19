@@ -85,9 +85,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-Lu-FEm">
+                                <rect key="frame" x="89" y="234" width="63" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="YEd-1w-RvJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="vzQ-y7-t4H"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.boundsToMasks" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2g-Yd-zEm">
+                                <rect key="frame" x="223" y="234" width="63" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NF5-jW-DJX"/>
+                                    <constraint firstAttribute="width" constant="63" id="qiO-8p-b5F"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fxp-Lu-FEm" firstAttribute="top" secondItem="O1G-hM-uAh" secondAttribute="bottom" constant="34" id="DJF-qD-mce"/>
+                            <constraint firstItem="fxp-Lu-FEm" firstAttribute="leading" secondItem="R5O-qs-rTQ" secondAttribute="leadingMargin" constant="73" id="GaF-TN-tFb"/>
+                            <constraint firstItem="Y2g-Yd-zEm" firstAttribute="baseline" secondItem="fxp-Lu-FEm" secondAttribute="baseline" id="K0i-LD-rr7"/>
                             <constraint firstItem="xq3-46-7Pc" firstAttribute="top" secondItem="czT-ER-SIB" secondAttribute="bottom" constant="20" id="Kbr-1g-7kR"/>
                             <constraint firstItem="O1G-hM-uAh" firstAttribute="top" secondItem="xq3-46-7Pc" secondAttribute="bottom" constant="17" id="LON-hM-qvB"/>
                             <constraint firstItem="xq3-46-7Pc" firstAttribute="leading" secondItem="R5O-qs-rTQ" secondAttribute="leadingMargin" constant="10" id="MhU-pC-J6y"/>
@@ -97,6 +126,7 @@
                             <constraint firstItem="xq3-46-7Pc" firstAttribute="top" secondItem="R5O-qs-rTQ" secondAttribute="top" constant="123" id="dbU-S1-Xjj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xq3-46-7Pc" secondAttribute="trailing" constant="10" id="iMz-jU-9KZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="czT-ER-SIB" secondAttribute="trailing" constant="10" id="k5A-D3-hl6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y2g-Yd-zEm" secondAttribute="trailing" constant="73" id="pR4-8V-gfC"/>
                             <constraint firstItem="czT-ER-SIB" firstAttribute="leading" secondItem="R5O-qs-rTQ" secondAttribute="leadingMargin" constant="10" id="qcz-o8-Wjz"/>
                             <constraint firstItem="czT-ER-SIB" firstAttribute="centerX" secondItem="R5O-qs-rTQ" secondAttribute="centerX" id="s9T-wg-Hxy"/>
                         </constraints>
