@@ -14,7 +14,7 @@
 -(instancetype)initWithFirstName:(NSString *)firstName
                         lastName:(NSString *)lastName
                           andAge:(NSNumber *)age
-                     emaiAddress:(NSString *)emailAddress
+                     emailAddress:(NSString *)emailAddress
                    yearsEmployed:(NSNumber *)yearsEmployed
                       andManager:(NSString *)managerName{  //we don't need to include employeeNumber because it is generated as the employee is created. we only include here what is needed to create employee
     

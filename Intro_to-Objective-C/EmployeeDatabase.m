@@ -30,6 +30,18 @@
     return shared;
 }
 
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.employees = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+
+
 -(NSInteger)count{
     return [_employees count];
 }
