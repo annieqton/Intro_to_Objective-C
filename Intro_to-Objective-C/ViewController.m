@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Person.h"
+//#import "Person.h"
 #import "NSString+String.h"
 #import "EmployeeDatabase.h"
 #import "Employee.h"
@@ -26,18 +26,16 @@
     
     
     //this is how you access your singleton by doing EmployeeDatabase share
-    [[EmployeeDatabase shared] count];
+//    [[EmployeeDatabase shared] count];
     
-    
-    
-
-    Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30 yearsEmployed:@2 andManager:@"Brook"];
-    
-    Employee *newInstructor = [original copy]; //preserve original and create a deep copy
-    
-    newInstructor.firstName = @"Mike";
-    
-    NSLog(original.firstName);
+//    
+//    Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30 emailAddress:@"adam@codefellows.com" yearsEmployed:@2 andManager:@"Brook"];
+//    
+//    Employee *newInstructor = [original copy]; //preserve original and create a deep copy
+//    
+//    newInstructor.firstName = @"Mike";
+//    
+//    NSLog(@"%@", original.firstName);
     
     
 //  LAB FROM MONDAY

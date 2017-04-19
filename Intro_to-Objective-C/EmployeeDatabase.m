@@ -10,7 +10,7 @@
 
 @interface EmployeeDatabase ()  //use interface with class extension to access a private method
 
-@property(strong, nonatomic) NSArray *employees;
+@property(strong, nonatomic) NSMutableArray *employees;
 
 @end
 
@@ -29,6 +29,49 @@
     });
     return shared;
 }
+
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.employees = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+
+
+-(NSInteger)count{
+    return [self.employees count];
+}
+
+-(NSArray *)allEmployees{
+    return self.employees;
+}
+
+-(Employee *)employeeAtIndex:(int)index{
+    return self.employees[index];
+}
+
+-(void)add:(Employee *)employee{
+     [self.employees addObject:employee];
+    
+//    NSLog(@"%lu", (unsigned long)[self.employees count]);
+}
+
+-(void)remove:(Employee *)employee{
+    [self.employees removeObject:employee];
+}
+
+-(void)removeEmployeeAtIndex:(int)index{
+    [self.employees removeObjectAtIndex:index];
+}
+
+-(void)removeAllEmployees{
+    [self.employees removeAllObjects];
+}
+
 
 
 //MARK: Helper methods

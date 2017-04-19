@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ViewController.h"
+#import "ViewControllerNew.h"
 #import "AppDelegate.h"
 
 
