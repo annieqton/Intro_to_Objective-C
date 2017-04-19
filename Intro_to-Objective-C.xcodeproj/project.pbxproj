@@ -19,6 +19,7 @@
 		F2323E781EA58490003AE60D /* NSString+String.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E771EA58490003AE60D /* NSString+String.m */; };
 		F2B14B6A1EA6876400833681 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B14B691EA6876400833681 /* EmployeeDatabase.m */; };
 		F2C9A6101EA6CD1C0012B7B4 /* ViewControllerNew.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9A60F1EA6CD1C0012B7B4 /* ViewControllerNew.m */; };
+		F2D3C23B1EA8047C003CC325 /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D3C23A1EA8047C003CC325 /* AddEmployeeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		F2B14B691EA6876400833681 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
 		F2C9A60E1EA6CD1C0012B7B4 /* ViewControllerNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerNew.h; sourceTree = "<group>"; };
 		F2C9A60F1EA6CD1C0012B7B4 /* ViewControllerNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerNew.m; sourceTree = "<group>"; };
+		F2D3C2391EA8047C003CC325 /* AddEmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEmployeeViewController.h; sourceTree = "<group>"; };
+		F2D3C23A1EA8047C003CC325 /* AddEmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEmployeeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				F2323E6B1EA54555003AE60D /* ViewController+Identifier.h */,
+				F2D3C2391EA8047C003CC325 /* AddEmployeeViewController.h */,
+				F2D3C23A1EA8047C003CC325 /* AddEmployeeViewController.m */,
 				F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */,
 				F2C9A60E1EA6CD1C0012B7B4 /* ViewControllerNew.h */,
 				F2C9A60F1EA6CD1C0012B7B4 /* ViewControllerNew.m */,
@@ -211,6 +216,7 @@
 			files = (
 				F2323E591EA524FC003AE60D /* ViewController.m in Sources */,
 				F2323E561EA524FC003AE60D /* AppDelegate.m in Sources */,
+				F2D3C23B1EA8047C003CC325 /* AddEmployeeViewController.m in Sources */,
 				F2B14B6A1EA6876400833681 /* EmployeeDatabase.m in Sources */,
 				F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */,
 				F2323E711EA56994003AE60D /* Employee.m in Sources */,
