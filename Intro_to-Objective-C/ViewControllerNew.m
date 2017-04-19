@@ -9,7 +9,7 @@
 #import "ViewControllerNew.h"
 #import "EmployeeDatabase.h"
 
-@interface ViewControllerNew () <UITableViewDataSource, UITableViewDelegate>
+@interface ViewControllerNew () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *employeeTable;
 
@@ -24,19 +24,27 @@
     [super viewDidLoad];
     
 
-    Employee *original = [[Employee alloc] initWithFirstName:@"Kat" lastName:@"Diddly" andAge:@30 emailAddress:@"kat@codefellows.com" yearsEmployed:@2 andManager:@"Dog Boss"];
-    
-    [[EmployeeDatabase shared] add:original];
-    
-//    for(Employee *employee in [[EmployeeDatabase shared] allEmployees]){
-//        
-//        NSLog(@"%@", employee.firstName);
-//    }
+//    Employee *original = [[Employee alloc] initWithFirstName:@"Kat" lastName:@"Diddly" andAge:@30 emailAddress:@"kat@codefellows.com" yearsEmployed:@2 andManager:@"Dog Boss"];
+//    
+//    [[EmployeeDatabase shared] add:original];
     
 
     self.employeeTable.dataSource = self;
-    self.employeeTable.delegate = self;
-
+    
+    
+    if([[EmployeeDatabase shared] count] == 0) {
+    
+        Employee *newEmp = [[Employee alloc] initWithFirstName:@"Annie"
+                                                      lastName:@"Bee"
+                                                        andAge:@10
+                                                  emailAddress:@"annie@mail.com"
+                                                 yearsEmployed:@25
+                                                    andManager:@"Bella"];
+       
+        [[EmployeeDatabase shared] add:newEmp];
+    }
+    
+    [self.employeeTable reloadData];
 }
 
 
@@ -54,8 +62,6 @@
     Employee *employee = [[EmployeeDatabase shared] employeeAtIndex:indexPath.row];
     
     cell.textLabel.text = employee.firstName;
-    
-//    NSLog(employee.firstName);
     
     return cell;
 }

@@ -15,8 +15,6 @@
 @end
 
 
-
-
 @implementation EmployeeDatabase
 
 +(instancetype)shared{
@@ -31,45 +29,69 @@
 }
 
 
-- (instancetype)init
-{
+- (instancetype)init{
+    
     self = [super init];
     if (self) {
-        self.employees = [[NSMutableArray alloc]init];
+        
+        _employees = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfURL:self.archiveURL]];
+                      
+        if(!_employees) {
+            _employees = [[NSMutableArray alloc]init];  //assign the underlined instance varariable without going through a seters
+        }
     }
     return self;
 }
 
+
+-(void)save{
+    BOOL success = [NSKeyedArchiver archiveRootObject:self.employees toFile:self.archiveURL.path];
+    
+    if (success) {
+        NSLog(@"saved Employees");
+    } else {
+        NSLog(@"save Failed!");
+    }
+}
 
 
 -(NSInteger)count{
     return [self.employees count];
 }
 
+
 -(NSArray *)allEmployees{
     return self.employees;
 }
 
+
 -(Employee *)employeeAtIndex:(int)index{
+    [self save];
     return self.employees[index];
 }
 
+
 -(void)add:(Employee *)employee{
      [self.employees addObject:employee];
-    
-//    NSLog(@"%lu", (unsigned long)[self.employees count]);
+     [self save];
 }
+
 
 -(void)remove:(Employee *)employee{
     [self.employees removeObject:employee];
+    [self save];
 }
+
 
 -(void)removeEmployeeAtIndex:(int)index{
     [self.employees removeObjectAtIndex:index];
+    [self save];
 }
+
 
 -(void)removeAllEmployees{
     [self.employees removeAllObjects];
+    [self save];
 }
 
 
@@ -82,6 +104,7 @@
     return documentsDirectoryURL;
 
 }
+
 
 -(NSURL *)archiveURL{
     
