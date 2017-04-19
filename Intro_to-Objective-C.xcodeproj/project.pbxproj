@@ -122,11 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				F2323E6B1EA54555003AE60D /* ViewController+Identifier.h */,
-				F2D3C2391EA8047C003CC325 /* AddEmployeeViewController.h */,
-				F2D3C23A1EA8047C003CC325 /* AddEmployeeViewController.m */,
 				F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */,
 				F2C9A60E1EA6CD1C0012B7B4 /* ViewControllerNew.h */,
 				F2C9A60F1EA6CD1C0012B7B4 /* ViewControllerNew.m */,
+				F2D3C2391EA8047C003CC325 /* AddEmployeeViewController.h */,
+				F2D3C23A1EA8047C003CC325 /* AddEmployeeViewController.m */,
 				F2323E571EA524FC003AE60D /* ViewController.h */,
 				F2323E581EA524FC003AE60D /* ViewController.m */,
 			);

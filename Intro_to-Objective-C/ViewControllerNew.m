@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *employeeTable;
 
+- (IBAction)AddButtonPressed:(UIBarButtonItem *)sender;
+
 @end
 
 
@@ -70,6 +72,8 @@
 
 
 
+- (IBAction)AddButtonPressed:(UIBarButtonItem *)sender {
+}
 @end
 
 

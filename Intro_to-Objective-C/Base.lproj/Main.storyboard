@@ -46,8 +46,26 @@
                             <constraint firstItem="Bna-WZ-X3U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="raF-cd-kBI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SFL-ZE-RVa"/>
+                    <navigationItem key="navigationItem" id="SFL-ZE-RVa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="v1s-B2-2UY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mc6-cH-jlT">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N2b-IB-RtJ" kind="presentation" identifier="AddEmployeeViewControllerSegue" id="nw0-YB-Q65"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="AddButtonPressed:" destination="BYZ-38-t0r" id="qoN-wr-1jH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="AddEmployeeDetails" destination="mc6-cH-jlT" id="DeT-qv-bpQ"/>
                         <outlet property="employeeTable" destination="Bna-WZ-X3U" id="ioV-GY-eAo"/>
                     </connections>
                 </viewController>
@@ -131,10 +149,12 @@
                             <constraint firstItem="czT-ER-SIB" firstAttribute="centerX" secondItem="R5O-qs-rTQ" secondAttribute="centerX" id="s9T-wg-Hxy"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kj4-FH-Ffl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1961" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pd1-ft-T94">
