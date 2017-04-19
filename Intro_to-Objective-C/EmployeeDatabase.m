@@ -52,14 +52,12 @@
 
 -(Employee *)employeeAtIndex:(int)index{
     return self.employees[index];
-    
 }
 
 -(void)add:(Employee *)employee{
      [self.employees addObject:employee];
     
-    NSLog(@"%lu", (unsigned long)[self.employees count]);
-    
+//    NSLog(@"%lu", (unsigned long)[self.employees count]);
 }
 
 -(void)remove:(Employee *)employee{
