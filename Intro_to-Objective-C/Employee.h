@@ -7,7 +7,7 @@
 //
 
 #import "Person.h"
-#import "Employee.h"
+//#import "Employee.h"
 
 
 @interface Employee : Person <NSCopying>

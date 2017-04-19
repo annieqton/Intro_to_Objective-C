@@ -43,33 +43,35 @@
 
 
 -(NSInteger)count{
-    return [_employees count];
+    return [self.employees count];
 }
 
 -(NSArray *)allEmployees{
-    return _employees;
+    return self.employees;
 }
 
 -(Employee *)employeeAtIndex:(int)index{
-    return _employees[index];
+    return self.employees[index];
     
 }
 
 -(void)add:(Employee *)employee{
-     [_employees addObject:employee];
+     [self.employees addObject:employee];
+    
+    NSLog(@"%lu", (unsigned long)[self.employees count]);
     
 }
 
 -(void)remove:(Employee *)employee{
-    [_employees removeObject:employee];
+    [self.employees removeObject:employee];
 }
 
 -(void)removeEmployeeAtIndex:(int)index{
-    [_employees removeObjectAtIndex:index];
+    [self.employees removeObjectAtIndex:index];
 }
 
 -(void)removeAllEmployees{
-    [_employees removeAllObjects];
+    [self.employees removeAllObjects];
 }
 
 

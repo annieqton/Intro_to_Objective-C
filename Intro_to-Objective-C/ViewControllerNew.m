@@ -24,10 +24,15 @@
     [super viewDidLoad];
     
 
-    Employee *original = [[Employee alloc]initWithFirstName:@"Kat" lastName:@"Diddly" andAge:@30 emailAddress:@"kat@codefellows.com" yearsEmployed:@2 andManager:@"Dog Boss"];
+    Employee *original = [[Employee alloc] initWithFirstName:@"Kat" lastName:@"Diddly" andAge:@30 emailAddress:@"kat@codefellows.com" yearsEmployed:@2 andManager:@"Dog Boss"];
     
-    [[EmployeeDatabase shared] add: original];
-    NSLog(@"%@", [[EmployeeDatabase shared] allEmployees]);
+    [[EmployeeDatabase shared] add:original];
+    
+//    for(Employee *employee in [[EmployeeDatabase shared] allEmployees]){
+//        
+//        NSLog(@"%@", employee.firstName);
+//    }
+    
 
     self.employeeTable.dataSource = self;
     self.employeeTable.delegate = self;
@@ -43,11 +48,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if(cell == nil){
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     
     Employee *employee = [[EmployeeDatabase shared] employeeAtIndex:indexPath.row];
+    
     cell.textLabel.text = employee.firstName;
+    
+//    NSLog(employee.firstName);
     
     return cell;
 }

@@ -18,7 +18,7 @@
                    yearsEmployed:(NSNumber *)yearsEmployed
                       andManager:(NSString *)managerName{  //we don't need to include employeeNumber because it is generated as the employee is created. we only include here what is needed to create employee
     
-    self = [super initWithFirstName:@"Adam" lastName:@"Wallraff" andAge:@30];
+    self = [super initWithFirstName:firstName lastName:lastName andAge:age];
 
     
     if(self){
