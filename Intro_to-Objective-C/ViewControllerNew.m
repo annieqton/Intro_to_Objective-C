@@ -28,18 +28,19 @@
 //    
 //    [[EmployeeDatabase shared] add:original];
     
-//    for(Employee *employee in [[EmployeeDatabase shared] allEmployees]){
-//        
-//        NSLog(@"%@", employee.firstName);
-//    }
-    
 
     self.employeeTable.dataSource = self;
     
     
     if([[EmployeeDatabase shared] count] == 0) {
     
-        Employee *newEmp = [[Employee alloc] initWithFirstName:@"Annie" lastName:@"Bee" andAge:@30 emailAddress:@"annie@mail.com" yearsEmployed:@25 andManager:@"Bella"];
+        Employee *newEmp = [[Employee alloc] initWithFirstName:@"Annie"
+                                                      lastName:@"Bee"
+                                                        andAge:@10
+                                                  emailAddress:@"annie@mail.com"
+                                                 yearsEmployed:@25
+                                                    andManager:@"Bella"];
+       
         [[EmployeeDatabase shared] add:newEmp];
     }
     
@@ -61,8 +62,6 @@
     Employee *employee = [[EmployeeDatabase shared] employeeAtIndex:indexPath.row];
     
     cell.textLabel.text = employee.firstName;
-    
-//    NSLog(employee.firstName);
     
     return cell;
 }

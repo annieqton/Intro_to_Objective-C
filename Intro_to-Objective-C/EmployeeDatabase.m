@@ -74,8 +74,6 @@
 -(void)add:(Employee *)employee{
      [self.employees addObject:employee];
      [self save];
-    
-//    NSLog(@"%lu", (unsigned long)[self.employees count]);
 }
 
 
