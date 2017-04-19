@@ -9,11 +9,10 @@
 #import "ViewControllerNew.h"
 #import "EmployeeDatabase.h"
 
+
 @interface ViewControllerNew () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *employeeTable;
-
-- (IBAction)AddButtonPressed:(UIBarButtonItem *)sender;
 
 @end
 
@@ -24,11 +23,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-
-//    Employee *original = [[Employee alloc] initWithFirstName:@"Kat" lastName:@"Diddly" andAge:@30 emailAddress:@"kat@codefellows.com" yearsEmployed:@2 andManager:@"Dog Boss"];
-//    
-//    [[EmployeeDatabase shared] add:original];
     
 
     self.employeeTable.dataSource = self;
@@ -48,6 +42,8 @@
     
     [self.employeeTable reloadData];
 }
+
+    
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -69,11 +65,6 @@
 }
 
 
-
-
-
-- (IBAction)AddButtonPressed:(UIBarButtonItem *)sender {
-}
 @end
 
 
