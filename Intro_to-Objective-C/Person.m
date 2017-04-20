@@ -30,6 +30,38 @@ NSString *_lastName;
 NSNumber *_age;
 
 
+//FOR LAB TODAY - ARC
+//after turn off ARC
+//setters
+//-(void)setName:(NSString *)name{
+//    
+//    if(_name != name){
+//        
+//        [name retain]; //retain new one
+//        [_name release]; //release old one
+//        
+//        _name = name; //reassign
+//    }
+//}
+//
+//getters
+//-(NSString *)name{
+//    return _name;
+//}
+//
+//
+//-(NSString *)description{
+//    NSString *description = [[NSString stringWithFormat:@"NAME: %@", self.name] autorelease];
+//    
+//    [description retain];
+//    
+//    return description;
+//    
+//}
+
+
+
+
 -(void)walk{
     NSString *firstName = [self firstName];
     NSLog(@"%@ is walking...", firstName);

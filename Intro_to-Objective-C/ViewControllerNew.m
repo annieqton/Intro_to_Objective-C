@@ -8,7 +8,7 @@
 
 #import "ViewControllerNew.h"
 #import "EmployeeDatabase.h"
-
+#import "Person.h"
 
 @interface ViewControllerNew () <UITableViewDataSource>
 
@@ -28,17 +28,12 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTable) name:@"reloadData" object:nil];
     
-//    if([[EmployeeDatabase shared] count] == 0) {
+    
+    
+// FOR LAB TODAY - ARC turn off for ViewController
+//    Person.newPerson = [[Person alloc] init];
 //
-//        Employee *newEmp = [[Employee alloc] initWithFirstName:@"Annie"
-//                                                      lastName:@"Bee"
-//                                                        andAge:@10
-//                                                  emailAddress:@"annie@mail.com"
-//                                                 yearsEmployed:@25
-//                                                    andManager:@"Bella"];
-//
-//        [[EmployeeDatabase shared] add:newEmp];
-//    }
+//    [newPerson retain];  //shows the memory size 16 bits
     
 }
 
