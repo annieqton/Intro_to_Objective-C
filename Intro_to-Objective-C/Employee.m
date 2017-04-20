@@ -32,6 +32,88 @@
 }
 
 
+
+//FOR LAB TODAY - ARC
+//after turn off ARC
+
+//Getters and setters for email address
+-(void)setEmailAddress:(NSString *)emailAddress{
+    
+    if(_emailAddress != emailAddress){
+        [emailAddress retain]; //retain new one
+        [_emailAddress release]; //release old one
+        _emailAddress = emailAddress; //reassign
+    }
+}
+
+//-(NSString *)emailAddress{
+//    return _emailAddress;
+//}
+
+-(NSString *)descriptionemailAddress{
+    
+    NSString *descriptionemailAddress = [[NSString stringWithFormat:@"EMAIL ADDRESS: %@", self.emailAddress] autorelease];
+    
+    [descriptionemailAddress retain];
+    
+    return descriptionemailAddress;
+}
+
+
+//Getters and setters for years employed
+-(void)setYearsEmployed:(NSNumber *)yearsEmployed{
+    
+    if(_yearsEmployed != yearsEmployed){
+        [yearsEmployed retain]; //retain new one
+        [_yearsEmployed release]; //release old one
+        _yearsEmployed = yearsEmployed; //reassign
+    }
+}
+
+//-(NSNumber *)yearsEmployed{
+//    return _yearsEmployed;
+//}
+
+-(NSNumber *)descriptionYearsEmployed{
+    
+    NSNumber *descriptionYearsEmployed = [[NSNumber numberWithInt:self.yearsEmployed.intValue] autorelease];
+    
+    [descriptionYearsEmployed retain];
+    
+    return descriptionYearsEmployed;
+}
+
+
+//Getters and setters for manager name
+-(void)setManagerName:(NSString *)managerName{
+    
+    if(_managerName != managerName){
+        [managerName retain]; //retain new one
+        [_managerName release]; //release old one
+        _managerName = managerName; //reassign
+    }
+}
+
+//-(NSString *)managerName{
+//    return _managerName;
+//}
+
+-(NSString *)descriptionManagerName{
+    
+    NSString *descriptionManagerName= [[NSString stringWithFormat:@": %@", self.managerName] autorelease];
+    
+    [descriptionManagerName retain];
+    
+    return descriptionManagerName;
+}
+
+
+
+
+
+
+
+
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{  //write to disk
     self = [super init];
     

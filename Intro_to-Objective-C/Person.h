@@ -14,28 +14,14 @@
 @property(strong, nonatomic) NSString *lastName;
 @property(strong, nonatomic) NSNumber *age;
 
+
+
 -(instancetype)initWithFirstName:(NSString *)firstName
                         lastName:(NSString *)lastName
                           andAge:(NSNumber *)age;
 
 
-//FOR LAB TODAY - ARC
-//
-//@interface Person : NSObject{
-//    NSString *_name;
-//}
-//
-//making these method public. see line 33 from person.m
-//-(void)setName:(NSString *)name{
-//-(NSString *)name{
-
-
-
-
-
-
-
-//Instance Method
+//Instance Method2
 -(void)walk;
 
 //Class Method
