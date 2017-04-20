@@ -33,31 +33,85 @@ NSNumber *_age;
 //FOR LAB TODAY - ARC
 //after turn off ARC
 //setters
-//-(void)setName:(NSString *)name{
-//    
-//    if(_name != name){
-//        
-//        [name retain]; //retain new one
-//        [_name release]; //release old one
-//        
-//        _name = name; //reassign
-//    }
-//}
-//
+-(void)setFirstName:(NSString *)firstName{
+    
+    if(_firstName != firstName){
+        
+        [firstName retain]; //retain new one
+        [_firstName release]; //release old one
+        _firstName = firstName; //reassign
+        
+    }
+}
+
 //getters
-//-(NSString *)name{
-//    return _name;
-//}
-//
-//
-//-(NSString *)description{
-//    NSString *description = [[NSString stringWithFormat:@"NAME: %@", self.name] autorelease];
-//    
-//    [description retain];
-//    
-//    return description;
-//    
-//}
+-(NSString *)firstName{
+    return _firstName;
+}
+
+
+-(NSString *)descriptionFirstName{
+    NSString *descriptionFirstName = [[NSString stringWithFormat:@"FIRST NAME: %@", self.firstName] autorelease];
+   
+    [descriptionFirstName retain];
+    
+    return descriptionFirstName;
+}
+
+
+
+
+-(void)setLastName:(NSString *)lastName{
+    
+    if(_lastName != lastName){
+        
+        [lastName retain];
+        [_lastName release];
+        _lastName = lastName;
+        
+    }
+}
+
+-(NSString *)lastName{
+    return _lastName;
+}
+
+-(NSString *)descriptionLastName{
+    NSString *descriptionLastName = [[NSString stringWithFormat:@"LAST NAME: %@", self.lastName] autorelease];
+    
+    [descriptionLastName retain];
+    
+    return descriptionLastName;
+}
+
+
+
+-(void)setAge:(NSNumber *)age{
+    
+    if(_age != age){
+        
+        [age retain];
+        [_age release];
+        _age = age;
+        
+    }
+}
+
+-(NSNumber *)age{
+    return _age;
+}
+
+-(NSNumber *)descriptionAge{
+    NSNumber *descriptionAge = [[NSNumber numberWithInt:@"AGE: %@", self.age] autorelease];
+    
+    [descriptionAge retain];
+    
+    return descriptionAge;
+}
+
+
+
+
 
 
 
