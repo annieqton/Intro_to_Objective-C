@@ -30,7 +30,7 @@ NSString *_lastName;
 NSNumber *_age;
 
 
-//FOR LAB TODAY
+//FOR LAB TODAY - ARC
 //after turn off ARC
 //setters
 //-(void)setName:(NSString *)name{

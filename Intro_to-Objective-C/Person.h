@@ -25,15 +25,12 @@
 +(void)sayHello;
 
 
-//FOR LAB TODAY
-
-
-
-
-
-
-
-
+//FOR LAB TODAY - ARC
+//
+//@interface Person : NSObject{
+//    NSString *_name;
+//}
+//
 //making these method public. see line 33 from person.m
 //-(void)setName:(NSString *)name{
 //-(NSString *)name{
