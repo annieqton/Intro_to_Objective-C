@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *yearsEmployedInput;
 @property (weak, nonatomic) IBOutlet UITextField *managerNameInput;
 
+
 @end
 
 
@@ -30,6 +31,8 @@
     // Do any additional setup after loading the view.
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

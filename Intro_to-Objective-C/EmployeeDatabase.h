@@ -15,7 +15,7 @@
 
 -(NSInteger)count;
 
--(NSArray *)allEmployees;  //needs * because it's a reference type
+-(NSMutableArray *)allEmployees;  //needs * because it's a reference type
 
 -(Employee *)employeeAtIndex:(int)index;
 

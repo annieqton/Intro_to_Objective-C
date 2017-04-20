@@ -60,7 +60,7 @@
 }
 
 
--(NSArray *)allEmployees{
+-(NSMutableArray *)allEmployees{
     return self.employees;
 }
 
