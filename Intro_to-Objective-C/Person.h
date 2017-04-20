@@ -18,12 +18,6 @@
                         lastName:(NSString *)lastName
                           andAge:(NSNumber *)age;
 
-//Instance Method
--(void)walk;
-
-//Class Method
-+(void)sayHello;
-
 
 //FOR LAB TODAY - ARC
 //
@@ -34,6 +28,19 @@
 //making these method public. see line 33 from person.m
 //-(void)setName:(NSString *)name{
 //-(NSString *)name{
+
+
+
+
+
+
+
+//Instance Method
+-(void)walk;
+
+//Class Method
++(void)sayHello;
+
 
 
 @end
