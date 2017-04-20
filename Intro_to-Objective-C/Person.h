@@ -25,4 +25,18 @@
 +(void)sayHello;
 
 
+//FOR LAB TODAY
+
+
+
+
+
+
+
+
+//making these method public. see line 33 from person.m
+//-(void)setName:(NSString *)name{
+//-(NSString *)name{
+
+
 @end
