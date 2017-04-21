@@ -92,7 +92,7 @@
                         <viewControllerLayoutGuide type="top" id="mAW-Q8-WJO"/>
                         <viewControllerLayoutGuide type="bottom" id="NdI-rr-6me"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R5O-qs-rTQ">
+                    <view key="view" contentMode="scaleToFill" id="R5O-qs-rTQ" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -172,7 +172,7 @@
                                     <constraint firstAttribute="height" constant="30" id="qPS-D2-Ima"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="years employed" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CpW-jm-OwE">
                                 <rect key="frame" x="26" y="318" width="323" height="30"/>
@@ -219,6 +219,9 @@
                             <constraint firstItem="xq3-46-7Pc" firstAttribute="top" secondItem="czT-ER-SIB" secondAttribute="bottom" constant="20" id="xQs-Ok-XBX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y2g-Yd-zEm" secondAttribute="trailing" constant="26" id="xk3-Xa-R8d"/>
                         </constraints>
+                        <connections>
+                            <action selector="tapBackgroundToDimissKeyboard:" destination="N2b-IB-RtJ" eventType="touchUpInside" id="Olz-oY-sma"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>

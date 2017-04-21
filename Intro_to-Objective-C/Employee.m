@@ -36,7 +36,7 @@
 //FOR LAB TODAY - ARC
 //after turn off ARC
 
-//Getters and setters for email address
+//setters for email address
 -(void)setEmailAddress:(NSString *)emailAddress{
     
     if(_emailAddress != emailAddress){
@@ -64,9 +64,9 @@
 -(void)setYearsEmployed:(NSNumber *)yearsEmployed{
     
     if(_yearsEmployed != yearsEmployed){
-        [yearsEmployed retain]; //retain new one
-        [_yearsEmployed release]; //release old one
-        _yearsEmployed = yearsEmployed; //reassign
+        [yearsEmployed retain];
+        [_yearsEmployed release];
+        _yearsEmployed = yearsEmployed;
     }
 }
 
@@ -88,9 +88,9 @@
 -(void)setManagerName:(NSString *)managerName{
     
     if(_managerName != managerName){
-        [managerName retain]; //retain new one
-        [_managerName release]; //release old one
-        _managerName = managerName; //reassign
+        [managerName retain];
+        [_managerName release];
+        _managerName = managerName;
     }
 }
 
