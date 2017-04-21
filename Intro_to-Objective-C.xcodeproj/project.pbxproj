@@ -13,9 +13,9 @@
 		F2323E5C1EA524FC003AE60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2323E5A1EA524FC003AE60D /* Main.storyboard */; };
 		F2323E5E1EA524FC003AE60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2323E5D1EA524FC003AE60D /* Assets.xcassets */; };
 		F2323E611EA524FC003AE60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2323E5F1EA524FC003AE60D /* LaunchScreen.storyboard */; };
-		F2323E6A1EA52F0F003AE60D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E691EA52F0F003AE60D /* Person.m */; };
+		F2323E6A1EA52F0F003AE60D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E691EA52F0F003AE60D /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F2323E6D1EA54555003AE60D /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E6C1EA54555003AE60D /* ViewController+Identifier.m */; };
-		F2323E711EA56994003AE60D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E701EA56994003AE60D /* Employee.m */; };
+		F2323E711EA56994003AE60D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E701EA56994003AE60D /* Employee.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F2323E781EA58490003AE60D /* NSString+String.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323E771EA58490003AE60D /* NSString+String.m */; };
 		F2B14B6A1EA6876400833681 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B14B691EA6876400833681 /* EmployeeDatabase.m */; };
 		F2C9A6101EA6CD1C0012B7B4 /* ViewControllerNew.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9A60F1EA6CD1C0012B7B4 /* ViewControllerNew.m */; };

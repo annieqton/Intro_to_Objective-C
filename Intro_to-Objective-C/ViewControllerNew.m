@@ -10,9 +10,11 @@
 #import "EmployeeDatabase.h"
 #import "Person.h"
 
-@interface ViewControllerNew () <UITableViewDataSource>
+@interface ViewControllerNew () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *employeeTable;
+
+
 
 @end
 
@@ -25,6 +27,7 @@
     [super viewDidLoad];
     
     self.employeeTable.dataSource = self;
+    self.employeeTable.delegate = self;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTable) name:@"reloadData" object:nil];
     
@@ -43,6 +46,23 @@
 }
 
 
+//implement swipe to delete
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if(editingStyle == UITableViewCellEditingStyleDelete){
+        
+        [[EmployeeDatabase shared] removeEmployeeAtIndex:(int)indexPath.row];
+        
+        [self.employeeTable reloadData];
+    }
+}
+
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[[EmployeeDatabase shared] allEmployees] count];
 }
@@ -54,7 +74,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     
-    Employee *employee = [[EmployeeDatabase shared] employeeAtIndex:indexPath.row];
+    Employee *employee = [[EmployeeDatabase shared] employeeAtIndex:(int)indexPath.row];
     
     cell.textLabel.text = employee.firstName;
     

@@ -54,13 +54,12 @@
     }
 }
 
-
 -(NSInteger)count{
     return [self.employees count];
 }
 
 
--(NSArray *)allEmployees{
+-(NSMutableArray *)allEmployees{
     return self.employees;
 }
 

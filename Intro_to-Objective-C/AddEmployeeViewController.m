@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *yearsEmployedInput;
 @property (weak, nonatomic) IBOutlet UITextField *managerNameInput;
 
+
 @end
 
 
@@ -31,6 +32,13 @@
     
 }
 
+//touch background to dismiss keyboard
+- (IBAction)tapBackgroundToDimissKeyboard:(id)sender {
+    [self.view endEditing:YES];
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -39,7 +47,12 @@
 - (IBAction)SaveEmployeeDetails:(id)sender {
     
     
-    Employee *newEmp = [[Employee alloc] initWithFirstName:[_firstNameInput text] lastName:[_lastNameInput text] andAge:[NSNumber numberWithInt:(int)[_ageInput text]] emailAddress:[_emailInput text] yearsEmployed:[NSNumber numberWithInt:(int)[_yearsEmployedInput text]] andManager:[_managerNameInput text]];
+    Employee *newEmp = [[Employee alloc] initWithFirstName:[_firstNameInput text]
+                                                  lastName:[_lastNameInput text]
+                                                    andAge:[NSNumber numberWithInt:(int)[_ageInput text]]
+                                              emailAddress:[_emailInput text]
+                                             yearsEmployed:[NSNumber numberWithInt:(int)[_yearsEmployedInput text]]
+                                                andManager:[_managerNameInput text]];
     
     [[EmployeeDatabase shared] add:newEmp];
     
